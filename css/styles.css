@@ -10,7 +10,7 @@ h4,
 h5,
 h6 {
   font-family: "Montserrat";
-  font-weight: 900;
+  font-weight: 905;
 }
 
 h2 {
@@ -19,7 +19,7 @@ h2 {
 }
 
 p {
-  color: grey;
+  color: rgb(120, 116, 116);
   font-family: "Montserrat";
   font-weight: 500;
 }
@@ -84,7 +84,7 @@ p {
 
 #features {
   position: relative;
-  background-color: white;
+  background-color: rgb(245, 241, 241);
   padding: 7% 15%;
 }
 
