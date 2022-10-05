@@ -34,6 +34,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="icon" href="favicon.ico" />
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
   </head>
 <!-- basis web design  -->
   <body>
@@ -65,6 +66,28 @@
                 <a class="nav-link" href="">Download</a>
               </li>
             </ul>
+            <input type="checkbox" id="toggle">
+            <label class="toggle" for="toggle">
+              <i class="bx bxs-sun"></i>
+              <i class="bx bx-moon"></i>
+              <span class="ball"></span>
+          </label>
+      
+          <!-- JS File -->
+          <script>
+            const body = document.querySelector("body");
+const toggle = document.querySelector("#toggle");
+const sunIcon = document.querySelector(".toggle .bxs-sun");
+const moonIcon = document.querySelector(".toggle .bx-moon");
+
+toggle.addEventListener("change", () => {
+    
+    body.classList.toggle("dark");
+    sunIcon.className = sunIcon.className == "bx bxs-sun" ? "bx bx-sun" : "bx bxs-sun";
+    moonIcon.className = moonIcon.className == "bx bxs-moon" ? "bx bx-moon" : "bx bxs-moon";
+
+});
+          </script>
           </div>
         </nav>
 
